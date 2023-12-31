@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import reactLogo from './assets/picture.jpg';
 import sun from './assets/sun.png';
 import moon from './assets/moon.png';
+import './index.css'; 
 
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,18 +25,23 @@ function Navbar() {
           <img src={reactLogo} alt="Portfolio Logo" width="30" height="30" className="d-inline-block align-top rounded-circle" />
           <span className={`ms-2 fw-bolder ${darkMode ? 'text-white' : 'text-dark'}`}>WINDEV.</span>
         </div>
-        <div className="form-check form-switch ms-auto">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            id="darkModeSwitch"
-            checked={darkMode}
-            onChange={toggleDarkMode}
-          />
-          <label className="form-check-label" htmlFor="darkModeSwitch">
-            {darkMode ? <img className="moon-image" src={moon} alt="Moon" /> : <img className="sun-image" src={sun} alt="Sun" />}
-          </label>
-        </div>
+        <div className="form-check form-switch ms-auto" style={{ marginTop: '-30px' }}>
+  <input
+    className="form-check-input"
+    type="checkbox"
+    id="darkModeSwitch"
+    checked={darkMode}
+    onChange={toggleDarkMode}
+  />
+  <label className="form-check-label" htmlFor="darkModeSwitch">
+    {darkMode ? (
+      <img className="moon-image rotating" src={moon} alt="Moon" />
+    ) : (
+      <img className="sun-image rotating" src={sun} alt="Sun" />
+    )}
+  </label>
+</div>
+
       </div>
     </nav>
   );
