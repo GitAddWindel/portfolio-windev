@@ -19,10 +19,10 @@ function Navbar() {
   return (
     <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}`}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <div className="navbar-brand d-flex align-items-center">
           <img src={reactLogo} alt="Portfolio Logo" width="30" height="30" className="d-inline-block align-top rounded-circle" />
-          WINDEV.
-        </a>
+          <span className="ms-2 fw-bolder">WINDEV.</span>
+        </div>
         <div className="form-check form-switch ms-auto">
           <input
             className="form-check-input"

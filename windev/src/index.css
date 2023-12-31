@@ -1,3 +1,11 @@
+
+/* spacing of my logo navbar and portfolio name */
+.d-inline-block {
+  margin-left: 10px;
+
+}
+
+/* for my switch toggle darkmode */
 .form-check-input {
   position: absolute;
   left: -9999px;
