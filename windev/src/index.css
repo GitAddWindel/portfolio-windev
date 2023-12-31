@@ -1,0 +1,29 @@
+.form-check-input {
+  position: absolute;
+  left: -9999px;
+}
+
+.form-check-label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 40px; 
+}
+
+.sun-image,
+.moon-image {
+  width: 24px; 
+  height: 24px;
+  position: absolute;
+  border-radius: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sun-image {
+  left: 0;
+}
+
+.moon-image {
+  right: 0;
+}
