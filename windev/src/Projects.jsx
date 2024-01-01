@@ -4,7 +4,7 @@ import sims from './assets/SIMS.mp4';
 
 function Projects() {
   const [ratings, setRatings] = useState(() => {
-    // Initialize ratings from localStorage or default to an empty object
+
     const storedRatings = localStorage.getItem('projectRatings');
     return storedRatings ? JSON.parse(storedRatings) : {};
   });
@@ -34,7 +34,6 @@ function Projects() {
   ];
 
   useEffect(() => {
-    // Save ratings to localStorage whenever they change
     localStorage.setItem('projectRatings', JSON.stringify(ratings));
   }, [ratings]);
 
@@ -69,7 +68,7 @@ function Projects() {
       <div className="row">
         {projectData.map((project) => (
           <div key={project.id} className="col-md-4 mb-4">
-            <div className="card">
+            <div className="card shadow p-3 mb-5 bg-white rounded">
               <iframe
                 title={`Project ${project.id}`}
                 width="100%"

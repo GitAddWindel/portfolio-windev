@@ -5,6 +5,7 @@ import Intro from './Intro'
 import Card from './Card';
 import Projects from './Projects';
 import Email from './Email'
+import Footer from './Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
      <Card />
      <Projects />
      <Email />
+     <Footer />
 
     </>
   )
